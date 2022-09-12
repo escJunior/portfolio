@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luke's Portfolio</title>
+    <title>escJunior's Portfolio</title>
     <meta
       name="description"
-      content="Portfolio for world-renowned software engineer Luke"
+      content="Portfolio for world-renowned software engineer escJunior"
     />
-    <meta name="author" content="Luke" />
+    <meta name="author" content="escJunior" />
     <link rel="icon" type="image/png" href="imgs/favicon.png" />
     <script
       src="https://kit.fontawesome.com/9bf7879613.js"
@@ -28,8 +28,8 @@
     <!-- Navbar -->
     <nav id="navbar">
       <div class="navbar__logo">
-        <i class="fa-solid fa-laptop-code"></i>
-        <a href="#">Luke</a>
+        <i class="fa-regular fa-moon"></i>
+        <a href="#">escJunior</a>
       </div>
       <ul class="navbar__menu">
         <li class="navbar__menu__item" data-link="#home">Home</li>
@@ -53,10 +53,10 @@
       <div class="home__container">
         <img
           src="imgs/profile.jpeg"
-          alt="Luke's profile photo"
+          alt="escJunior's profile photo"
           class="home__avatar"
         />
-        <h1 class="home__title">Hello, <br />I'm Dream Coder</h1>
+        <h1 class="home__title">Hello, <br />I'm escJunior</h1>
         <h2 class="home__description">A Software Engineer FE/iOS, Korea</h2>
         <button class="home__contact" data-link="#contact">CONTACT ME</button>
       </div>
@@ -66,8 +66,8 @@
     <section id="about" class="section section__container">
       <h1>About me</h1>
       <p>
-        FE
-        <br />iOS <br />Maybe... JAVA?
+        I am a developer who always gets things done when given developments. <br>The reason I was introduced as a software engineer is that I have experienced in Front / Back end and App development.
+        <br>Based on these experiences, I am currently moving forward as a front-end developer closest to the user.
       </p>
       <div class="about__majors">
         <div class="major">
@@ -118,8 +118,10 @@
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
-          FE
-          <br />iOS <br />Maybe... JAVA?
+          Currently, In charge of mobile Web / iOS Dev.
+          <br>And when a new service is opened, I am in the role of analyzing what kind of development work is needed, 
+          <br>sharing it with team members and partners, and developing it.
+          <br>I am passionate about learning new skills and currently learning React.
         </p>
         <div class="skillset">
           <div class="skillset__left">
@@ -127,34 +129,34 @@
             <div class="skill">
               <div class="skill__description">
                 <span>HTML</span>
-                <span>99%</span>
+                <span>70%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 99%"></div>
+                <div class="skill__value" style="width: 70%"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span>CSS</span>
-                <span>99%</span>
+                <span>60%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 90%"></div>
+                <div class="skill__value" style="width: 60%"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span>JAVASCRIPT</span>
-                <span>99%</span>
+                <span>JavaScript</span>
+                <span>70%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 90%"></div>
+                <div class="skill__value" style="width: 70%"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span>Swift</span>
-                <span>99%</span>
+                <span>30%</span>
               </div>
               <div class="skill_bar">
                 <div class="skill__value" style="width: 30%"></div>
@@ -162,8 +164,8 @@
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span>Objective C</span>
-                <span>99%</span>
+                <span>Objective-C</span>
+                <span>30%</span>
               </div>
               <div class="skill__bar">
                 <div class="skill__value" style="width: 30%"></div>
@@ -171,11 +173,11 @@
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span>JAVA</span>
-                <span>99%</span>
+                <span>Java</span>
+                <span>40%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 30%"></div>
+                <div class="skill__value" style="width: 40%"></div>
               </div>
             </div>
           </div>
@@ -193,7 +195,7 @@
               <h3 class="skillset__title">Etc</h3>
               <ul class="etc__list">
                 <li><span>Git</span></li>
-                <li><span>OZ, Ubiform (Electric Documents)</span></li>
+                <li><span>Oz, Ubiform (Electric Documents)</span></li>
               </ul>
             </div>
           </div>
@@ -203,202 +205,123 @@
 
     <!-- Work -->
     <section id="work" class="section">
+      <h1>My work</h1>
       <div class="section__container">
-        <h1>My work</h1>
-        <h3>Projects</h3>
-        <div class="work__categories">
-          <button class="category__btn selected" data-filter="*">
-            All <sapn class="category__count">8</sapn>
-          </button>
-          <button class="category__btn" data-filter="front_end">
-            Front-end <sapn class="category__count">3</sapn>
-          </button>
-          <button class="category__btn" data-filter="back_end">
-            Back-end <sapn class="category__count">3</sapn>
-          </button>
-          <button class="category__btn" data-filter="mobile">
-            Mobile <sapn class="category__count">2</sapn>
-          </button>
-        </div>
+        <ul class="project__main">
 
-        <div class="work__projects">
-          <a
-            href="https://naver.com"
-            class="project"
-            target="blank"
-            data-type="front_end"
-          >
-            <img
-              src="imgs/projects/project1.png"
-              alt="project1"
-              class="project__img"
-            />
-            <div class="project__description">
-              <h3>Project1</h3>
-              <span>Clone coding with HTML and CSS</span>
+          <li class="project__item">
+            <div class="project__preview">
+              <img class="project__img"src="./imgs/projects/check_ins.jpeg" alt="petsitter project picture">
             </div>
-          </a>
-          <a
-            href="https://naver.com"
-            class="project"
-            target="blank"
-            data-type="front_end"
-          >
-            <img
-              src="imgs/projects/project2.png"
-              alt="project2"
-              class="project__img"
-            />
-            <div class="project__description">
-              <h3>Project2</h3>
-              <span>Clone coding with HTML and CSS</span>
+            <div class="project__detail">
+              <div class="detail__column">
+                <h3 class="project__name">Insurance Diagnosis Service (2022)</h3>
+                <p class="project__tool"> Vanilla JS / Java / Oracle SQL / HTML / CSS</p>
+                <p class="project__summry">
+                  A system that evaluates the insurance score by inquiring the customer's insurance products.
+                </p>
+              </div>
+              <div class="detail__column"></div>
             </div>
-          </a>
-          <a
-            href="https://naver.com"
-            class="project"
-            target="blank"
-            data-type="front_end"
-          >
-            <img
-              src="imgs/projects/project3.png"
-              alt="project3"
-              class="project__img"
-            />
-            <div class="project__description">
-              <h3>Project3</h3>
-              <span>Clone coding with HTML and CSS</span>
+          </li>
+
+          <li class="project__item">
+            <video controls muted class="video__block">
+              <source src="./imgs/projects/SSO.mp4" type="video/mp4" />
+            </video>
+        
+            <div class="project__detail">
+              <div class="detail__column">
+                <h3 class="project__name">Single Sign On (2021)</h3>
+                <p class="project__tool">Swift / Objective-C</p>
+                <p class="project__summry">
+                  I led the project. The system that enables app-to-app movement between group companies' app with one login.
+                </p>
+              </div>
+              <div class="detail__column"></div>
             </div>
-          </a>
-          <a
-            href="https://naver.com"
-            class="project"
-            target="blank"
-            data-type="back_end"
-          >
-            <img
-              src="imgs/projects/project4.png"
-              alt="project4"
-              class="project__img"
-            />
-            <div class="project__description">
-              <h3>Project4</h3>
-              <span>Clone coding with HTML and CSS</span>
+          </li>
+
+          <li class="project__item">
+            <video controls muted class="video__block">
+              <source src="./imgs/projects/LS.mp4" type="video/mp4" />
+            </video>
+        
+            <div class="project__detail">
+              <div class="detail__column">
+                <h3 class="project__name">Display and hot switch AD image in app (2022)</h3>
+                <p class="project__tool">Objective-C / Java / Vanilla JS / HTML / CSS</p>
+                <p class="project__summry">
+                  Show the AD image after launchscreen, and the AD image can be replaced immediately on the admin web page.
+                </p>
+              </div>
+              <div class="detail__column"></div>
             </div>
-          </a>
-          <a
-            href="https://naver.com"
-            class="project"
-            target="blank"
-            data-type="back_end"
-          >
-            <img
-              src="imgs/projects/project5.png"
-              alt="project5"
-              class="project__img"
-            />
-            <div class="project__description">
-              <h3>Project5</h3>
-              <span>Clone coding with HTML and CSS</span>
-            </div>
-          </a>
-          <a
-            href="https://naver.com"
-            class="project"
-            target="blank"
-            data-type="back_end"
-          >
-            <img
-              src="imgs/projects/project6.png"
-              alt="project6"
-              class="project__img"
-            />
-            <div class="project__description">
-              <h3>Project6</h3>
-              <span>Clone coding with HTML and CSS</span>
-            </div>
-          </a>
-          <a
-            href="https://naver.com"
-            class="project"
-            target="blank"
-            data-type="mobile"
-          >
-            <img
-              src="imgs/projects/project7.png"
-              alt="project7"
-              class="project_img"
-            />
-            <div class="project__description">
-              <h3>Project7</h3>
-              <span>Clone coding with HTML and CSS</span>
-            </div>
-          </a>
-          <a
-            href="https://naver.com"
-            class="project"
-            target="blank"
-            data-type="mobile"
-          >
-            <img
-              src="imgs/projects/project8.png"
-              alt="project8"
-              class="project__img"
-            />
-            <div class="project__description">
-              <h3>Project8</h3>
-              <span>Clone coding with HTML and CSS</span>
-            </div>
-          </a>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- Testimonials -->
     <section id="testimonials" class="section">
+      <h1>Testimonials</h1>
       <div class="section__container">
-        <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonials">
-          <div class="testimonial">
-            <img
-              src="imgs/testimonials/people1.jpg"
-              alt=""
-              class="testimonials__avatar"
-            />
-            <div class="testimonial__speech-bubble">
-              <p>Hi.</p>
-              <p class="name"><a href="">Ellie</a> / Apple</p>
+        <ul class="project__main">
+
+          <li class="project__item">
+            <div class="project__preview">
+              <img class="project__img"src="./imgs/testimonials/202111_goodDev.jpeg" alt="petsitter project picture">
             </div>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial__speech-bubble">
-              <p>Hi.</p>
-              <p class="name"><a href="">Ellie</a> / Apple</p>
+            <div class="project__detail">
+              <div class="detail__column">
+                <h3 class="project__name">Excellent employee in November 2021</h3>
+                <p class="project__tool"></p>
+                <p class="project__summry">
+                  He contributed to the successful opening of the SSO project of the affiliated company, 
+                  and saved about 60 million won in development cost.
+                </p>
+              </div>
+              <div class="detail__column">
+                
+              </div>
             </div>
-            <img
-              src="imgs/testimonials/people1.jpg"
-              alt=""
-              class="testimonials__avatar"
-            />
-          </div>
-        </div>
+          </li>
+
+          <li class="project__item">
+            <div class="project__preview">
+              <img class="project__img"src="./imgs/testimonials/2020_grade.png" alt="petsitter project picture">
+            </div>
+            <div class="project__detail">
+              <div class="detail__column">
+                <h3 class="project__name">Best performance rating in 2020</h3>
+                <p class="project__tool"></p>
+                <p class="project__summry">
+                  I was able to get a good score because I did my job diligently and helped the team when there was a difficulty.
+                </p>
+              </div>
+              <div class="detail__column">
+                
+              </div>
+            </div>
+          </li>
       </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="section">
-      <h1 class="contact__title">Let's talk</h1>
-      <h2 class="contact__email">seungmin713@gmail.com</h2>
+      <h1 class="contact__title">Connect!</h1>
       <div class="contact__links">
-        <a href="https://naver.com" target="_blank">
+        <a href="https://github.com/escJunior" target="_blank">
           <i class="fa-brands fa-github"></i>
         </a>
-        <a href="https://naver.com" target="_blank">
+        <a href="https://www.linkedin.com/in/seungmin-kim-a820a2b0/" target="_blank">
           <i class="fa-brands fa-linkedin"></i>
         </a>
+        <a href="mailto:devescjunior@gmail.com" target='_blank'>
+          <i class="fa-regular fa-envelope"></i>
+        </a>
       </div>
-      <p class="contact__rights">2022 DevSimba - All rights reserved</p>
+      <p class="contact__rights">2022 escJunior - All rights reserved</p>
     </section>
 
     <!-- Arrow up -->

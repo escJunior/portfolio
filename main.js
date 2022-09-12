@@ -65,37 +65,6 @@ arrowUP.addEventListener('click', (event) => {
   scrollIntoView('#home');
 });
 
-// Projects
-const workBtnContainer = document.querySelector('.work__categories');
-const projectContainer = document.querySelector('.work__projects');
-const projects = document.querySelectorAll('.project');
-workBtnContainer.addEventListener('click', (e) => {
-  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
-  if (filter == null) {
-    return null;
-  }
-
-  // Remove selection from the previous item and select the new one
-  const active = document.querySelector('.category__btn.selected');
-  active.classList.remove('selected');
-  const target =
-    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
-  target.classList.add('selected');
-
-  projectContainer.classList.add('anim-out');
-
-  setTimeout(() => {
-    projects.forEach((project) => {
-      if (filter === '*' || filter === project.dataset.type) {
-        project.classList.remove('invisible');
-      } else {
-        project.classList.add('invisible');
-      }
-    });
-    projectContainer.classList.remove('anim-out');
-  }, 300);
-});
-
 // 1. 모든 섹션 요소들과 메뉴 아이템들을  가지고 온다.
 // 2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다.
 // 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다.
